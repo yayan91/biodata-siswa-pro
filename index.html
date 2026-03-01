@@ -200,7 +200,6 @@
                         </div>
                         <button type="submit" class="btn btn-primary w-100 py-2 fw-bold">MASUK APLIKASI</button>
                     </form>
-                    <div class="mt-4 pt-3 border-top"><small class="text-muted fst-italic">Mappaguru Online - Muhammad Hasratul</small></div>
                 </div>
             </div>
         </div>
@@ -441,9 +440,19 @@
     </div>
 
     <!-- FOOTER COPYRIGHT -->
-    <footer class="app-footer">
-        Biodata siswa Mappaguru Online Buatan <b>Muhammad Hasratul</b> &copy; 2026
-    </footer>
+    <footer class="app-footer" style="text-align: center; padding: 1.5rem 1rem; font-size: 0.8rem; color: #64748b; line-height: 1.6;">
+    <div>
+        <strong>Muhammad Hasratul - Developer & Founder</strong>
+    </div>
+    
+    <div style="opacity: 0.8;">
+        &copy; <span id="year-modern"></span> <b>Mappaguru Online</b>. Hak Cipta dilindungi undang-undang.
+    </div>
+	</footer>
+
+	<script>
+		document.getElementById("year-modern").textContent = new Date().getFullYear();
+	</script>
 
     <!-- MODAL INFO APLIKASI -->
     <div class="modal fade" id="infoModal" tabindex="-1">
